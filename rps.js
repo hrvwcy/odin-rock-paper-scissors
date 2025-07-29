@@ -11,7 +11,16 @@ function getComputerChoice() {
   }
 }
 
+function getHumanChoice() {
+  let humanChoice = prompt("What's your input?");
+  if (humanChoice === "rock") {
+    console.log(`YOU CHOSE ROCK!`);
+  } else if (humanChoice === "scissors") {
+    console.log(`YOU CHOSE SCISSORS!`);
+  } else if (humanChoice === "paper") {
+    console.log(`YOU CHOSE PAPER!`);
+  }
+}
+
 let humanScore = 0;
 let computerScore = 0;
-
-getComputerChoice();
